@@ -1,1 +1,11 @@
 /*CSS Dosyası*/
+
+/*Boşlukları sıfırlamak için*/
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+body{
+    background-color: aqua;
+    background-image: url(resimler/bayrak.jpg);
+}
