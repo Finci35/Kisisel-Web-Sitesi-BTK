@@ -26,14 +26,14 @@
     height: 100px;
     border-style: dotted;
     border-width: 1px;
-    background-color: yellow;
+    /*background-color: yellow;*/ /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
     margin: auto;
 }
 /*Logo*/
 #logo{
     width: 100px;
     height: 80px;
-    border-style: dotted;
+    /*border-style: dotted;*/ /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
     border-width: 1px;
     background-color: white;
     position: relative; /*logoyu üstten ve soldan 10 pixel kaydırmak için*/
@@ -45,7 +45,7 @@
 #sosyal{
     width: 180px;
     height: 40px;
-    border-style: dotted;
+/*    border-style: dotted;*/ /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
     border-width: 1px;
     background-color: white;
     float: right;
@@ -53,16 +53,51 @@
     top: 50px;
     right: 10px;
 }
+
+/*Anamenu*/
+#anamenu{
+    width: 398px;
+    height: 50px;
+    border-style: dotted;
+    border-width: 1px;
+    background-color: deepskyblue; /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
+    margin: auto;
+}
+/*Linkleri butona dönüştürebilmek için burda css kodları yazıyoruz.*/
+#anamenu ul{ 
+    list-style-type: none; /*Madde imlerini kaldırır.*/
+}
+#anamenu ul li{
+    width: 80px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: blue;
+    background-color: white;
+    float: left;
+    padding: 4px;
+    margin-left: 4px;
+    position: relative;
+    top: 10px;
+    text-align: center; /*Buton içindeki metinlerin ortalanmasını sağlar.*/    
+}
+#anamenu ul a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /*Linklerin altındaki çizgiyi kaldırır.*/
+    font-weight: bold;
+    font-size: 12px;
+}
+
     </style>
 </head>
 <body>
     <div id="sayfa">
         <header id="banner">
             <div id="logo">
-                <img src="resimler/Fatih.jpg" alt="Fatih" title="Fatih"
-                width="100px" height="80px">
+                <a href="index.html"><img src="resimler/Fatih.jpg" alt="Fatih" title="Fatih"
+                width="100px" height="80px"></a>
             </div>
-            <div id="sosyal">
+            <div id="sosyal"> <!--ikonlara tıklayınca sosyal medya adreslerine gidilebilmesi için <a> tagını kullandık.-->
                 <a href="#"><img src="resimler/face.png" width="57px" height="40px"></a>
                 <a href="#"><img src="resimler/twit.png" width="57px" height="40px"></a>
                 <a href="#"><img src="resimler/insta.png" width="57px" height="40px"></a>
@@ -71,7 +106,13 @@
 
         </header>
         <nav id="anamenu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="ben-kimim.html">Ben Kimim?</a></li>
+                <li><a href="egitim.html">Eğitim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
 
+            </ul>
         </nav>
         <article id="icerik">
 
