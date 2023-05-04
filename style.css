@@ -5,7 +5,161 @@
     margin: 0px;
     padding: 0px;    
 }
+
 body{
-    background-color: aqua;
-    background-image: url(resimler/bayrak.jpg);
+    background-color: azure;
+}
+#sayfa{
+    width: 400px;
+    min-height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+}
+/*Banner*/
+#banner{
+    width: 398px;
+    height: 100px;
+    border-style: dotted;
+    border-width: 1px;
+    /*background-color: yellow;*/ /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
+    margin: auto;
+}
+/*Logo*/
+#logo{
+    width: 100px;
+    height: 80px;
+    /*border-style: dotted;*/ /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
+    border-width: 1px;
+    background-color: white;
+    position: relative; /*logoyu üstten ve soldan 10 pixel kaydırmak için*/
+    top: 10px;
+    left: 10px;
+    float: left;
+}
+/*Sosyal medya ikonları*/
+#sosyal{
+    width: 180px;
+    height: 40px;
+/*    border-style: dotted;*/ /*başlarken yerini belli etmek için kullandık. ama artık gerek yok.*/
+    border-width: 1px;
+    background-color: white;
+    float: right;
+    position: relative; /*Sosyal medya ikonlarını üstten 50, sağdan 10 pixel kaydırmak için.*/
+    top: 50px;
+    right: 10px;
+}
+
+/*Anamenu*/
+#anamenu{
+    width: 398px;
+    height: 50px;
+    border-style: dotted;
+    border-width: 1px;
+    background-color: deepskyblue;
+    margin: auto;
+}
+/*Linkleri butona dönüştürebilmek için burda css kodları yazıyoruz.*/
+#anamenu ul{ 
+    list-style-type: none; /*Madde imlerini kaldırır.*/
+}
+#anamenu ul li{
+    width: 80px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: blue;
+    background-color: white;
+    float: left;
+    padding: 4px;
+    margin-left: 4px;
+    position: relative;
+    top: 10px;
+    text-align: center; /*Buton içindeki metinlerin ortalanmasını sağlar.*/    
+}
+#anamenu ul a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /*Linklerin altındaki çizgiyi kaldırır.*/
+    font-weight: bold;
+    font-size: 12px;
+}
+#anamenu ul a:link{ /*Ziyaret edilmemiş link*/
+    color: blue;
+}
+#anamenu ul a:visited{ /*Ziyaret edilmiş link*/
+    color: brown;
+}
+#anamenu ul a:hover{ /*Linkin üzerine maus gelince*/
+    color: grey;
+    text-decoration: underline;
+}
+#anamenu ul a:active{ /*Linke tıklayınca*/
+    color: red;
+}
+
+/*İçerik ve Yanmenü Kodları*/
+#icerik{
+    width: 300px;
+    min-height: 400px;
+/*    border-style: dotted; */
+    border-width: 1px;
+    background-color: white;
+    float: left;
+}
+#yanmenu{
+    width: 100px;
+    min-height: 401px;
+/*    border-style: dotted; */
+    border-width: 1px;
+    background-color: royalblue;
+    float: left;
+}
+
+.resim{
+    width: 100px;
+    float: left;
+    margin: 5px;
+}
+
+.metin{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: blue;
+}
+.baslik{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Alt Menü */
+
+#altmenu{
+    width: 400px;
+    min-height: 44px;
+/*    border-style: dotted; */
+    border-width: 1px;
+    background-color: aquamarine;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+#altmenu a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#altmenu a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+.kucukmetin{
+    font-size: 10px;
 }
